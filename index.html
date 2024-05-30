@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Bingo</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script type="text/javascript">
+		var mainbingo = true;
+	</script>
+	<!-- <meta http-equiv="refresh"> -->
+</head>
+
+<body>
+	<div id="suspense-box"></div>
+	<div id="bg"></div>
+	<div id="reset-div">
+		<h1>Are you sure do you want to clear the board?</h1>
+		<button onclick="clearBalls()">YES</button>
+		<button onclick="noClearBalls()">NO</button>
+		<h4>Press (1) for YES and (0) for NO</h4>
+	</div>
+	<div id="ball-draw">
+		0
+	</div>
+	<div id="ball-count">Ball Count: 0/75</div>
+	<table id="draw-history">
+		<tr>
+			<th style="width: 50px;">B</th>
+			<td id="draw-history-b"></td>
+		</tr>
+		<tr>
+			<th style="background-color: #0f95ab">I</th>
+			<td id="draw-history-i"></td>
+		</tr>
+		<tr>
+			<th style="background-color: #da8402;">N</th>
+			<td id="draw-history-n"></td>
+		</tr>
+		<tr>
+			<th style="background-color: #26b303;">G</th>
+			<td id="draw-history-g"></td>
+		</tr>
+		<tr>
+			<th style="background-color: #9C27B0;">O</th>
+			<td id="draw-history-o"></td>
+		</tr>
+	</table>
+	<table id="controls-table">
+		<tr>
+			<td class="left">
+				<button id="control-1" onclick="resetPattern()">RESET PATTERN</button>
+				<button id="control-2" onclick="clearBalls()">CLEAR BALLS</button>
+				<button id="control-0" onclick="window.open('generateCard.html','_blank')">GET CARDS</button><br>
+				<button id="control-3" onclick="toggleMusic(this)">TURN ON MUSIC</button>
+				<button id="control-33" onclick="toggleSfx(this)">TURN OFF SFX</button>
+				<button id="control-333" onclick="toggleTTS(this)" style="display: none;">TURN ON HOST</button>
+			</td>
+			<td class="right">
+				<button id="control-4" onclick="drawBall(1)">NORMAL DRAW</button><br>
+				<button id="control-6" style="opacity: 0" onclick="showSuspense()">REVEAL SUSPENSE DRAW</button><button
+					id="control-5" onclick="drawBall(2)">SUSPENSE DRAW</button>
+			</td>
+		</tr>
+	</table>
+
+	<table id="pattern-table"></table>
+	<div id="prize-div" class="input-div">
+		<label id="prize-label" for="prize-input" class="input-label">PRIZE</label>
+		<input type="text" id="prize-input" class="input">
+	</div>
+
+
+	<div id="game-div" class="input-div">
+		<label id="game-label" for="game-input" class="input-label">GAME TYPE</label>
+		<input type="text" id="game-input" value="NORMAL" class="input">
+	</div>
+
+	<marquee class="help">Shortcuts: (1) Normal Draw, (2) Suspense Draw, (3) Show Suspense Draw, (0) Clear Balls, (9)
+		Reset Pattern, (8) Toggle Music, (7) Toggle SFX, (6) Switch Game Type</marquee>
+
+	<script type="text/javascript" src="script.js"></script>
+</body>
+
+</html>

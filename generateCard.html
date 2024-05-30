@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Generate Bingo Card</title>
+	<script type="text/javascript">
+		var mainbingo = false;
+	</script>
+	<script type="text/javascript" src="script.js"></script>
+	<style type="text/css">
+		body {
+			text-align: center;
+		}
+		table {
+			transform: scale(0) rotate(50deg);
+			display: inline-block;
+			border-collapse: collapse;
+			border: 2px solid #000;
+			margin: 0;
+			transition: all 1s;
+			opacity: 0;
+		}
+		table td, table th{
+		    text-align: center;
+		    width: 60px;
+		    font-family: Segoe UI Semibold;
+		    font-size: 40px;
+		    border: 1px solid #000;
+		}
+
+		table th {
+			background-color: #dedede;
+		}
+
+		.free {
+			background-color: #454545;
+			color: #FFF;
+			font-size: 20px;
+		}
+
+		#generating {
+			position: absolute;
+		    top: 35%;
+    		left: 30%;
+		    background-color: #009688;
+		    font-family: Segoe UI Semibold;
+		    font-weight: normal;
+		    text-transform: uppercase;
+		    color: #FFF;
+		    padding: 20px 50px;
+		    border-radius: 2px;
+		    box-shadow: 0px 5px 15px rgba(0,0,0,0.5);
+		    transition: all 1s;
+		}
+
+		#bingo-logo {
+			display: none;
+		    font-weight: normal;
+		    font-family: product sans;
+		    font-size: 40px;
+		    margin: 4px 0;
+		    background-color: #dedede;
+		}
+
+		#bingo-logo span {
+			font-size: 20px;
+		}
+
+		@media print {
+			#bingo-logo {
+				display: block;
+			}
+		}
+	</style>
+</head>
+<body>
+	<h1 id="generating">Generating Bingo Cards...</h1>
+	<table id="card-1"></table>
+	<table id="card-2"></table>
+	<table id="card-3"></table>
+	<br>
+	<table id="card-4"></table>
+	<table id="card-5"></table>
+	<table id="card-6"></table>
+	<h2 id="bingo-logo">BINGO <span>developed by Echo</span></h2>
+</body>
+</html>
