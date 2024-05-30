@@ -16,8 +16,8 @@
 	<div id="bg"></div>
 	<div id="reset-div">
 		<h1>Are you sure do you want to clear the board?</h1>
-		<button onclick="clearBalls()">YES</button>
-		<button onclick="noClearBalls()">NO</button>
+		<button onclick="clearBalls()">YES [1]</button>
+		<button onclick="noClearBalls()">NO [0]</button>
 		<h4>Press (1) for YES and (0) for NO</h4>
 	</div>
 	<div id="ball-draw">
@@ -49,17 +49,17 @@
 	<table id="controls-table">
 		<tr>
 			<td class="left">
-				<button id="control-1" onclick="resetPattern()">RESET PATTERN</button>
-				<button id="control-2" onclick="clearBalls()">CLEAR BALLS</button>
+				<button id="control-1" onclick="resetPattern()">RESET PATTERN [9]</button>
+				<button id="control-2" onclick="clearBalls()">CLEAR BALLS [0]</button>
 				<button id="control-0" onclick="window.open('generateCard.html','_blank')">GET CARDS</button><br>
-				<button id="control-3" onclick="toggleMusic(this)">TURN ON MUSIC</button>
-				<button id="control-33" onclick="toggleSfx(this)">TURN OFF SFX</button>
+				<button id="control-3" onclick="toggleMusic(this)">TURN ON MUSIC [8]</button>
+				<button id="control-33" onclick="toggleSfx(this)">TURN OFF SFX [7]</button>
 				<button id="control-333" onclick="toggleTTS(this)" style="display: none;">TURN ON HOST</button>
 			</td>
 			<td class="right">
-				<button id="control-4" onclick="drawBall(1)">NORMAL DRAW</button><br>
-				<button id="control-6" style="opacity: 0" onclick="showSuspense()">REVEAL SUSPENSE DRAW</button><button
-					id="control-5" onclick="drawBall(2)">SUSPENSE DRAW</button>
+				<button id="control-4" onclick="drawBall(1)">NORMAL DRAW [1]</button><br>
+				<button id="control-6" style="opacity: 0" onclick="showSuspense()">REVEAL SUSPENSE DRAW [3]</button><button
+					id="control-5" onclick="drawBall(2)">SUSPENSE DRAW [2]</button>
 			</td>
 		</tr>
 	</table>
@@ -72,7 +72,7 @@
 
 
 	<div id="game-div" class="input-div">
-		<label id="game-label" for="game-input" class="input-label">GAME TYPE</label>
+		<label id="game-label" for="game-input" class="input-label">GAME TYPE [6]</label>
 		<input type="text" id="game-input" value="NORMAL" class="input">
 	</div>
 

@@ -160,11 +160,11 @@ function toggleMusic(element) {
 		if (bg_music) {
 			bgmusic.pause();
 			//bgmusic.currentTime = 0;
-			element.innerHTML = 'TURN ON MUSIC';
+			element.innerHTML = 'TURN ON MUSIC [8]';
 			bg_music = false;
 		} else {
 			bgmusic.play();
-			element.innerHTML = 'TURN OFF MUSIC';
+			element.innerHTML = 'TURN OFF MUSIC [8]';
 			bg_music = true;
 		}
 	}
@@ -174,10 +174,10 @@ function toggleMusic(element) {
 var sfx = true;
 function toggleSfx(element) {
 	if (sfx) {
-		element.innerHTML = 'TURN ON SFX';
+		element.innerHTML = 'TURN ON SFX [7]';
 		sfx = false;
 	} else {
-		element.innerHTML = 'TURN OFF SFX';
+		element.innerHTML = 'TURN OFF SFX [7]';
 		sfx = true;
 	}
 }
