@@ -1,366 +1,376 @@
 body {
-	margin: 0;
-	padding: 0;
-	padding-top: 180px;
-	overflow: hidden;
-	background-color: #000;
+  margin: 0;
+  padding: 0;
+  padding-top: 180px;
+  overflow: hidden;
+  background-color: #000;
 }
 
 #pattern-table {
-	position: absolute;
-    top: 2px;
-    left: 70px;
-	border-collapse: collapse;
-	font-family: Segoe UI Semibold;
-	background-color: #ff3b3b;
-	padding: 0;
-	transition: all 0.3s;
+  position: absolute;
+  top: 2px;
+  left: 70px;
+  border-collapse: collapse;
+  font-family: Segoe UI Semibold;
+  background-color: #ff3b3b;
+  padding: 0;
+  transition: all 0.3s;
 }
 
-#pattern-table th, #pattern-table td {
-	margin: 0;
-	padding: 0;
-	border: 1px solid #ff3b3b;
-	color: #FFF;
+#pattern-table th,
+#pattern-table td {
+  margin: 0;
+  padding: 0;
+  border: 1px solid #ff3b3b;
+  color: #fff;
 }
 
 .tbl-head {
-	text-align: center;
+  text-align: center;
 }
 
 .tbl-free {
-	text-align: center;
-	font-size: 10px;
-	color: #FFF;
+  text-align: center;
+  font-size: 10px;
+  color: #fff;
 }
 
 .ptrn-bx {
-	display: none;
+  display: none;
 }
 
 .ptrn-lbl {
-	background-color: #dedede;
-	display: block;
-	width: 30px;
-	height: 30px;
-	cursor: pointer;
-	transition: all 0.2s;
+  background-color: #dedede;
+  display: block;
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+  transition: all 0.2s;
 }
 
 .ptrn-bx:checked + .ptrn-lbl {
-	background-color: #808080;
+  background-color: #808080;
 }
 
 .ptrn-lbl:hover {
-	background-color: #cdcdcd;
+  background-color: #cdcdcd;
 }
 
 table .vertical-txt {
-	position: absolute;
-    transform: rotate(-90deg);
-    left: -109px;
-    font-size: 30px;
-    top: 69px;
-    width: 115%;
-    background-color: #ff3b3b;
-    color: #FFF;
+  position: absolute;
+  transform: rotate(-90deg);
+  left: -109px;
+  font-size: 30px;
+  top: 69px;
+  width: 115%;
+  background-color: #ff3b3b;
+  color: #fff;
 }
 
 table .other-cell {
-
 }
 
 .input-div {
-	border: 2px solid #ff3b3b;
-    border-radius: 3px;
-    overflow: hidden;
-    position: absolute;
-    top: 5px;
-    right: 20px;
-    transition: all 0.3s;
+  border: 2px solid #ff3b3b;
+  border-radius: 3px;
+  overflow: hidden;
+  position: absolute;
+  top: 5px;
+  right: 20px;
+  transition: all 0.3s;
 }
 
 #game-div {
-	top: 85px;
+  top: 85px;
 }
 
 .input-label {
-	font-size: 20px;
-	text-align: center;
-	display: block;
-	font-family: Segoe UI Semibold;
-	color: #FFF;
-	background-color: #ff3b3b;
+  font-size: 20px;
+  text-align: center;
+  display: block;
+  font-family: Segoe UI Semibold;
+  color: #fff;
+  background-color: #ff3b3b;
 }
 
 .input:focus {
-	outline: none;
+  outline: none;
 }
 
 .input {
-	text-align: center;
-	padding: 5px;
-	border: none;
-	font-size: 20px;
-	color: #ff3b3b;
-	background-color: rgba(255,255,255,0.9);
+  text-align: center;
+  padding: 5px;
+  border: none;
+  font-size: 20px;
+  color: #ff3b3b;
+  background-color: rgba(255, 255, 255, 0.9);
 }
 
 #draw-history {
-	width: 98%;
-	margin: 5px auto;
-	border-collapse: collapse;
-	background-color: rgba(255,255,255,0.8);
-	transition: all 0.3s;
+  width: 98%;
+  margin: 5px auto;
+  border-collapse: collapse;
+  background-color: rgba(255, 255, 255, 0.8);
+  transition: all 0.3s;
 }
 
-#draw-history td, #draw-history th {
-	border: 2px solid #454545;
+#draw-history td,
+#draw-history th {
+  border: 2px solid #454545;
 }
 
 #draw-history th {
-	font-family: Segoe UI Semibold;
-	background-color: #ff3b3b;
-	font-size: 40px;
-	color: #FFF;
+  font-family: Segoe UI Semibold;
+  background-color: #ff3b3b;
+  font-size: 40px;
+  color: #fff;
 }
 
 #draw-history td {
-	transition: all 0.3s;
+  transition: all 0.3s;
 }
 
 #draw-history span {
-	width: 27px;
-    height: 26px;
-    text-align: center;
-    display: inline-block;
-    border-radius: 100%;
-    background-color: #FFF;
-    margin: 0 2px;
-    font-size: 20px;
-    padding-top: 2px;
-    border: 10px solid #9e9e9e;
-	color: #9e9e9e;
-	opacity: 0.5;
-    transition: all 0.3s;
+  width: 27px;
+  height: 26px;
+  text-align: center;
+  display: inline-block;
+  border-radius: 100%;
+  background-color: #fff;
+  margin: 0 2px;
+  font-size: 20px;
+  padding-top: 2px;
+  border: 10px solid #9e9e9e;
+  color: #9e9e9e;
+  opacity: 0.5;
+  transition: all 0.3s;
 }
 
 #draw-history span.drawn {
-	position: relative;
-	opacity: 1;
+  position: relative;
+  opacity: 1;
 }
 
 #draw-history #draw-history-b span.drawn {
-	color: #ff3b3b;
-	border: 10px solid #ff3b3b;
+  color: #ff3b3b;
+  border: 10px solid #ff3b3b;
 }
 
 #draw-history #draw-history-i span.drawn {
-	color: #0f95ab;
-	border: 10px solid #0f95ab;
+  color: #0f95ab;
+  border: 10px solid #0f95ab;
 }
 
 #draw-history #draw-history-n span.drawn {
-	color: #da8402;
-	border: 10px solid #da8402;
+  color: #da8402;
+  border: 10px solid #da8402;
 }
 
 #draw-history #draw-history-g span.drawn {
-	color: #26b303;
-	border: 10px solid #26b303;
+  color: #26b303;
+  border: 10px solid #26b303;
 }
 
 #draw-history #draw-history-o span.drawn {
-	color: #9C27B0;
-	border: 10px solid #9C27B0;
+  color: #9c27b0;
+  border: 10px solid #9c27b0;
 }
 
 #ball-draw {
-	position: fixed;
-    top: 0px;
-    left: 42%;
-    font-size: 80px;
-    border-radius: 100%;
-    background-color: #FFF;
-    border: 42px solid #ff3b3b;
-    width: 100px;
-    height: 100px;
-    text-align: center;
-    color: #ff3b3b;
-    box-shadow: 0px 10px 25px rgba(0,0,0,0.3);
-    transform: scale(0) rotate(20deg);
-    transition: all 0.3s;
-    z-index: 99;
+  position: fixed;
+  top: 0px;
+  left: 42%;
+  font-size: 80px;
+  border-radius: 100%;
+  background-color: #fff;
+  border: 42px solid #ff3b3b;
+  width: 100px;
+  height: 100px;
+  text-align: center;
+  color: #ff3b3b;
+  box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.3);
+  transform: scale(0) rotate(20deg);
+  transition: all 0.3s;
+  z-index: 99;
 }
 
 #ball-draw span {
-	filter: blur(10px);
+  filter: blur(10px);
 }
 
 #ball-draw::after {
-	width: 24px;
-    text-align: center;
-	position: absolute;
-    top: -38px;
-    left: 38%;
-    color: #FFF;
-    font-size: 35px;
-    font-weight: bold;
+  width: 24px;
+  text-align: center;
+  position: absolute;
+  top: -38px;
+  left: 38%;
+  color: #fff;
+  font-size: 35px;
+  font-weight: bold;
 }
 
 .ball-draw-b {
-	color: #ff3b3b !important;
-	border: 42px solid #ff3b3b !important;
+  color: #ff3b3b !important;
+  border: 42px solid #ff3b3b !important;
 }
 
 .ball-draw-b::after {
-    content: "B";
+  content: "B";
 }
 
 .ball-draw-i {
-	color: #0f95ab !important;
-	border: 42px solid #0f95ab !important;
+  color: #0f95ab !important;
+  border: 42px solid #0f95ab !important;
 }
 
 .ball-draw-i::after {
-    content: "I";
+  content: "I";
 }
 
 .ball-draw-n {
-	color: #da8402 !important;
-	border: 42px solid #da8402 !important;
+  color: #da8402 !important;
+  border: 42px solid #da8402 !important;
 }
 
 .ball-draw-n::after {
-    content: "N";
+  content: "N";
 }
 
 .ball-draw-g {
-	color: #26b303 !important;
-	border: 42px solid #26b303 !important;
+  color: #26b303 !important;
+  border: 42px solid #26b303 !important;
 }
 
 .ball-draw-g::after {
-    content: "G";
+  content: "G";
 }
 
 .ball-draw-o {
-	color: #9C27B0 !important;
-	border: 42px solid #9C27B0 !important;
+  color: #9c27b0 !important;
+  border: 42px solid #9c27b0 !important;
 }
 
 .ball-draw-o::after {
-    content: "O";
+  content: "O";
 }
 
 #controls-table {
-	width: 98%;
-	margin: 5px auto;
-	transition: all 0.3s;
+  width: 98%;
+  margin: 5px auto;
+  transition: all 0.3s;
 }
 
 #controls-table .left {
-	text-align: left;
+  text-align: left;
 }
 
 #controls-table .right {
-	text-align: right;
+  text-align: right;
 }
 
-#controls-table button, #reset-div button {
-	margin: 5px;
-	display: inline-block;
-	color: #FFF;
-	background-color: #ff3b3b;
-	border: none;
-	padding: 5px 10px;
-	font-size: 20px;
-	box-shadow: 0px 5px 15px rgba(0,0,0,0.5);
-	font-family: Segoe UI Semibold;
-	border-radius: 3px;
-	cursor: pointer;
-	user-select: none;
-	transition: all 0.2s;
+#controls-table button,
+#reset-div button {
+  margin: 5px;
+  display: inline-block;
+  color: #fff;
+  background-color: #ff3b3b;
+  border: none;
+  padding: 5px 10px;
+  font-size: 20px;
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.5);
+  font-family: Segoe UI Semibold;
+  border-radius: 3px;
+  cursor: pointer;
+  user-select: none;
+  transition: all 0.2s;
 }
 
 #control-6 {
-	transition: all 1s !important;
+  transition: all 1s !important;
+  position: relative;
+  z-index: 98;
 }
 
-#controls-table button:hover, #reset-div button:hover {
-	transform: scale(1.1);
+#controls-table button:hover,
+#reset-div button:hover {
+  transform: scale(1.1);
 }
 
-#controls-table button:focus, #reset-div button:focus {
-	outline: none;
+#controls-table button:focus,
+#reset-div button:focus {
+  outline: none;
 }
 
 #bg {
-	position: fixed;
-	z-index: -1;
-	width: 100%;
-	height: 100vh;
-	top: 0;
-	left: 0;
-	transform: scale(2.5) rotate(0deg);
-	background-image: url(bg.jpg);
-	background-position: center;
-	background-size: cover;
-	background-repeat: no-repeat;
-	animation: rotatebg 15s linear infinite;
-	transition: all 1s;
+  position: fixed;
+  z-index: -1;
+  width: 100%;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  transform: scale(2.5) rotate(0deg);
+  background-image: url(bg.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  animation: rotatebg 15s linear infinite;
+  transition: all 1s;
 }
 
 @keyframes rotatebg {
-    0% {transform: scale(2.5) rotate(0deg);}
-    100% {transform: scale(2.5) rotate(-360deg);}
+  0% {
+    transform: scale(2.5) rotate(0deg);
+  }
+  100% {
+    transform: scale(2.5) rotate(-360deg);
+  }
 }
 
 .help {
-	position: fixed;
-    bottom: 0;
-    font-family: sans-serif;
-    color: #FFF;
-    background-color: #ff1818;
-    font-size: 12px;
-    padding: 2px;
-	z-index: 98;
+  position: fixed;
+  bottom: 0;
+  font-family: sans-serif;
+  color: #fff;
+  background-color: #ff1818;
+  font-size: 12px;
+  padding: 2px;
+  z-index: 98;
 }
 
 #ball-count {
-	color: #FFF;
-    font-family: Segoe UI Semibold;
-    font-size: 20px;
-    position: absolute;
-    right: 77px;
-    top: 153px;
-    transition: all 0.3s;
+  color: #fff;
+  font-family: Segoe UI Semibold;
+  font-size: 20px;
+  position: absolute;
+  right: 77px;
+  top: 153px;
+  transition: all 0.3s;
 }
 
 #reset-div {
-	position: absolute;
-    top: -50%;
-    width: 100%;
-    text-align: center;
-    font-family: sans-serif;
-    color: #222;
-    background-color: #FFF;
-    box-shadow: 0px 5px 15px rgba(0,0,0,0.5);
-    transition: all 0.3s;
-    z-index: 100;
+  position: absolute;
+  top: -50%;
+  width: 100%;
+  text-align: center;
+  font-family: sans-serif;
+  color: #222;
+  background-color: #fff;
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.5);
+  transition: all 0.3s;
+  z-index: 100;
 }
 
 #suspense-box {
-	display: none;
-	position: fixed;
-    width: 94vw;
-    height: 94vh;
-    border-left: 3vw solid;
-    border-right: 3vw solid;
-    border-top: 3vh solid;
-    border-bottom: 3vh solid;
-    border-color: red;
-    top: 0;
-    left: 0;
-	z-index: 97;
+  display: none;
+  position: fixed;
+  width: 94vw;
+  height: 94vh;
+  border-left: 3vw solid;
+  border-right: 3vw solid;
+  border-top: 3vh solid;
+  border-bottom: 3vh solid;
+  border-color: red;
+  top: 0;
+  left: 0;
+  z-index: 97;
 }
