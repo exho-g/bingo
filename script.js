@@ -2,7 +2,7 @@ var draw_normal = new Audio('draw_normal.wav');
 var draw_suspense = new Audio('draw_suspense.mp3');
 var draw_suspense_letter = new Audio('draw_suspense_letter.wav');
 var draw_heartbeat = new Audio('draw_heartbeat.mp3');
-var bgmusic = new Audio('bgmusic.mp3');
+var bgmusic = new Audio('bgmusic_old.mp3');
 var clear_balls = new Audio('clear_balls.mp3');
 var reset_pattern = new Audio('reset_pattern.mp3');
 
